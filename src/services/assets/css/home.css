@@ -1,0 +1,301 @@
+
+#item {
+  display: none;
+}
+
+
+
+/* .container-main { */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* padding-right: 4px !important; */
+  /* padding-left: 4px !important; */
+  /* width: auto !important; */
+/* } */
+.displaynone{
+  display: none !important;
+}
+#ko{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 1079;
+    }
+      .floating-box {
+      display: inline-block;
+      /* width: 150px; */
+      /* height: 75px; */
+      /* margin: 10px; */
+      /* border: 3px solid #73AD21;   */
+  }
+  body {
+      background-color: #fff0f0  !important;
+    }
+
+    @media screen and (min-width: 700px) {
+      .formmodal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding:100px 300px; /* Location of the box */
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /*Full height*/
+        overflow: 0; 
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      .side-none{
+        display: none;
+      }
+      .phone-form{
+        display: none !important;
+      }
+      .desktop-form{
+        display: block !important;
+      }
+      
+        #ko{
+            display: none;
+        }
+        #searchbtns{
+            display: none;
+        }
+        #searchinput{
+            display: block;
+        }
+        #main{
+          width:100% ;
+          max-width: 100% !important;
+          padding-right: 0;
+          padding-left: 0;
+          margin-right: 0;
+          border-left:1px solid rgb(216, 210, 210);
+        }
+        .container-main {
+          margin-left: 30px;
+          margin-right: 30px;
+          padding-right: 4px !important;
+          padding-left: 4px !important;
+          width: auto !important;
+        }
+        #nav-container{
+          margin-left: 3rem !important;
+          padding-left: 3rem !important;
+        }
+        #side-main{
+          /* padding-left: 0 !important; */
+          padding-right: 0 !important;
+          border-right:1px solid rgb(216, 210, 210);
+        }
+        .sidenav{
+          border-right:1px solid rgb(216, 210, 210);
+        }
+        .post{
+          padding: 7px;
+        }
+        .inputfield{
+          /* outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(245, 245, 248) */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #03a8f45e;
+    padding: 5px 15px;
+    outline: none;
+      }
+    }
+    @media screen and (max-width: 700px) {
+      #container {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        /* touch-action: none; */
+      }
+      #item {
+        width: 100px;
+        height: 100px;
+        background-color: rgb(2, 7, 93);
+        border: 10px solid rgba(136, 136, 136, .5);
+        border-radius: 50%;
+        touch-action: none;
+        user-select: none;
+        z-index: 107900;
+        position:fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 50px;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        font-size: 38px;
+        color: white;
+      }
+      #item:active {
+        background-color: rgba(168, 218, 220, 1.00);
+      }
+      #item:hover {
+        cursor: pointer;
+        border-width: 20px;
+      }
+      
+        #searchinput{
+            display: none;
+        }
+        /* #searchbtns{
+            display: block;
+        } */
+        .phone-form{
+          display: block !important;
+        }
+        .desktop-form{
+          display: none !important;
+        }
+        .desktop-nav{
+          display: none !important;
+        }
+        .inputfield{
+          /* outline: 0;
+    border-width: 0 0 2px;
+    border-color: rgb(245, 245, 248) */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #03a8f45e;
+    padding: 0 0;
+    outline: none;
+      }
+    }
+
+    li.bottom-nav a{
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    body {
+      background-color: white !important;
+    }
+    /* .inputfield{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #03a8f45e;
+  padding: 5px 15px;
+  outline: none;
+    } */
+    .inputfield:focus{
+        border-color: green
+    }
+
+    :focus {
+        outline: none;
+      }
+      
+      .content {
+        position: relative;
+      }
+      
+      .input {
+        width: 400px;
+        color:white;
+        border: 0;
+        /* padding: 10px 10px; */
+        background-color:rgb(2, 7, 93);
+        border-bottom: 1px solid #929fba;
+      }
+      
+      .input ~ .border {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 1px;
+      }
+      
+      .input:focus ~ .border {
+        width: 100%;
+        transition: 0.5s;
+      }
+
+
+      /* modal */
+      /* The Modal (background) */
+.formmodal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top:40px; /* Location of the box */
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /*Full height*/
+  overflow: 0; 
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #f6faf6;
+  color: rgb(2, 7, 93);
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #f1f7f1;
+  color: rgb(2, 7, 93);
+}

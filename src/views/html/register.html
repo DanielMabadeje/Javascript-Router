@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../assets/css/form.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+</head>
+<body>
+    <section class="desktop">
+        <div class="mt-5 col-md-12" style="margin-top:10%; color:white;">
+            <div class="container active">
+                <div class="card alt">
+                    <div class="toggle"></div>
+                    <h1 class="title">Register
+                        <!-- <div class="close"></div> -->
+                    </h1>
+                    <form id="sign_up_form">
+                        <div class="input-container">
+                            <input type="text" id="usernR" name="username" required="required" class=" value="" />
+                            <label for="usernR">Username</label>
+                            <span class="invalid-feedback"></span>
+                            <div class="bar"></div>
+                            <span class="text-danger" id="username_err"></span>
+                        </div>
+                        <div class="input-container">
+                            <input type="email" id="usernR" required="required" name="email" class=" " value="" />
+                            <label for="usernR">Email</label>
+                            <span class="invalid-feedback"></span>
+                            <div class="bar"></div>
+                            <span class="text-danger" id="email_err"></span>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" id="passwR" required="required" name="password" class="" value="" />
+                            <label for="passwR">Password</label>
+                            <span class="invalid-feedback"></span>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="input-container">
+                            <input type="password" id="repeatpass" required="required" name="confirm_password" class="" value="" />
+                            <label for="repeatpass">Repeat Password</label>
+                            <span class="invalid-feedback"></span>
+                            <div class="bar"></div>
+                            <span class="text-danger" id="password_err"></span>
+                        </div>
+                        <div class="button-container">
+                            <button><span>Submit </span></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../config/config.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/login.js"></script>
+    <script src="../assets/js/register.js"></script>
+</body>
+</html>

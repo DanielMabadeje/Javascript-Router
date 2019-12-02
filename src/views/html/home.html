@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost/spasavage/src/services/assets/css/sidebar.css">
+    <link rel="stylesheet" href="http://localhost/spasavage/src/services/assets/css/home.css">
+    <link rel="stylesheet" href="http://localhost/spasavage/src/services/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="http://localhost/spasavage/src/services/assets/css/bootstrap.min.css">
+    <script src="http://localhost/spasavage/src/services/assets/js/jquery.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/jquery.min.js"></script>
+</head>
+<body>
+    
+   
+    <ul id="ko" class=" text-center">
+            <li class="bottom-nav floating-box"><a class="active" href="#home"><span class="fa fa-home"></span> </a></li>
+            <li class="bottom-nav floating-box"><a href="#news"><span class="fa fa-bell"></span></a></li>
+            <li class="bottom-nav floating-box"><a href="#news"><span class="fa fa-envelope"></span></a></li>
+            <li class="bottom-nav floating-box"><a href="#contact"><span class="fa fa-plus"></a></li>
+            <li class="bottom-nav floating-box"><a href="#about"><span class="fa fa-fire"></a></li>
+                <li class="bottom-nav floating-box"><a href="#about"><span class="fa fa-bars"></a></li>
+          </ul>
+    <section class="container-main mt-5 pt-5" id="container">
+        <div class="col-md-9 d-flex floating-box " id="side-main" >
+
+        <!--start sidebar -->
+                <div class="col-md-4 p-0 bg-white" id="side" style="height:700px;">
+                        <div class="sidenav bg-white" id="mySidenav">
+                            <!-- <a href="javascript:void(0)" class="closebtn closed" id="close" onclick="closeNav()">x</a> -->
+                            <div class="" style="height:150px; width:auto; background-color:black;">
+                                    <a href="javascript:void(0)" class="closebtn closed" id="close" onclick="closeNav()">x</a>
+                            </div>
+                            <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" alt="" id="profiles">
+                            <h1 style="text-align:center;">John Doe</h1>
+                            <div class="d-flex  text-md-center ">
+                                <div class="col-md-4">
+                                    <h4>Fans</h4>
+                                    <span class="count">19</span>
+                                </div>
+                                <div class="col-md-4">
+                                    <h4>Following</h4>
+                                    <span class="count"> 80</span>
+                                </div>
+                                <div class="col-md-4 pl-0">
+                                    <h4>Posts</h4>
+                                    <span class="count"> 0</span>
+                                </div>
+                            </div>
+                            <br>
+                            <!-- <hr> -->
+                            <div class="p-4 text-dark side-none">
+                            <div style="padding:10px; font-size:19px; color:blue;;">
+                                <a href="#">Explore</a>
+                            </div>
+                            <!-- <hr> -->
+                            <div style="padding:10px; font-size:19px; color:blue;">
+                                <a href="#"><i class="fa fa-user"></i> View Profile</a>
+                            </div>
+                            <!-- <hr> -->
+                            <div style="padding:10px; font-size:19px; color:blue;">
+                                <span onclick="logout()"><i class="fa fa-power-off"></i> Logout</span>
+                            </div>
+                        </div>
+                            <!-- <hr> -->
+                        </div>
+                    </div>
+
+<!-- end sidebar -->
+
+
+
+                    <div class="col-md-8 " id="main">
+                                      <!-- modal -->
+            <!-- The Modal -->
+<div id="myModal" class="formmodal ">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">×</span>
+            <h2>Write Post</h2>
+          </div>
+          <div class="modal-body">
+                <form action="" method="post">
+                        <div class="form-group">
+                            <textarea type="text" name="body" class="form-control form-control-lg entry" value=""> </textarea>
+                            <span class="invalid-feedback"></span>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="Submit">
+                    </form>
+                    <!-- <script>
+                        entry = $('.entry');
+                        entry.bind('keydown', function(e){
+                            //check if # was pressed
+                            if (e.keyCode === 51){
+                                alert('wow');
+                                //chat.throwMessage($(this).val());
+                            //e.preventDefault();
+                            
+                            }
+                            //check if spacebar was pressed
+                            else
+                             if(e.keycode==32){
+                                alert('space')
+                            }
+                            });
+                    </script> -->
+          </div>
+          <div class="modal-footer">
+            <h5>&copy; savage</h5>
+          </div>
+        </div>
+      
+      </div>
+                            <nav class="navbar bg-white  navbar-expand-lg m-0 p-0">
+                                <div class="col-md-12 pb-0 pt-0 mb-0 mt-0" id="navbarsExampleDefault">
+                                    <ul class="d-flex col-md-12 text-center p-0 m-0 pb-0 mb-0 mt-0" style="list-style: none;">
+                                        <li class="nav-item floating-box active col-md-4">
+                                            <a class="nav-link" href="#">Posts</a>
+                                        </li>
+                                        <li class="nav-item floating-box col-md-4">
+                                            <a class="nav-link" href="#">Contests</a>
+                                        </li>
+                                        <li class="nav-item floating-box col-md-4">
+                                            <a class="nav-link" href="#">Polls</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- <hr> -->
+                            </nav>
+                            <div class="col-md-12 bg-white mb-5 ">
+                                <hr>
+                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                <span id="myBtn">Write a savage post...</span>
+                                <!-- <a href="#" id="myBtn" class="btn btn-primary ">
+                                    <i class="fa fa-pencil"></i>Add Post
+                                </a> -->
+                            </div>
+                                
+                            <!-- <hr> -->
+                            <br>
+                            <!-- <br> -->
+                            <div class="bg-white">
+                    
+                                <div class="card  post ">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <h3 class="card-title">
+                                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                                Daniel
+                                            </h3>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste laboriosam exercitationem eos cumque similique deserunt molestiae! Debitis culpa ad, repellat in, hic aperiam, quam a dolorem dolore harum cumque.</p>
+                                            <a href="viewpost.php?id=" class="btn btn-primary">Details</a>
+                                        </div>
+                                        <img src="http://localhost/spasavage/src/services/assets/images/a-diverse-group-of-friends-together-laughing-and-having-a-good-time-16x9-1024x576.jpg" alt="" height="200px" width="100%" class="c">
+                                    </div>
+                                    <div class="ml-5 pl-5">
+            
+                                        <span class="like fa fa-thumbs-o-up" data-id=""></span>
+                                        <span class="likes_count">100 likes</span>
+                                        <a href="viewpost.php?id#comment_form"><span id="comments_count">2 Comments</span></a>
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <hr>
+            
+                                </div>
+            
+            
+                                <div class="card  post ">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <h3 class="card-title">
+                                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                                Daniel
+                                            </h3>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste laboriosam exercitationem eos cumque similique deserunt molestiae! Debitis culpa ad, repellat in, hic aperiam, quam a dolorem dolore harum cumque.</p>
+                                            <a href="viewpost.php?id=" class="btn btn-primary">Detailsg</a>
+                                        </div>
+                                        <img src="http://localhost/spasavage/src/services/assets/images/a-diverse-group-of-friends-together-laughing-and-having-a-good-time-16x9-1024x576.jpg" alt="" height="200px" width="100%" class="c">
+                                    </div>
+                                    <div>
+            
+                                        <span class="like fa fa-thumbs-o-up" data-id=""></span>
+                                        <span class="likes_count">100 likes</span>
+                                        <a href="viewpost.php?id#comment_form"><span id="comments_count">2 Comments</span></a>
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <hr>
+            
+                                </div>
+
+
+
+                                <div class="card  post ">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <h3 class="card-title">
+                                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                                <!-- <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png"> -->
+                                                Daniel
+                                            </h3>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste laboriosam exercitationem eos cumque similique deserunt molestiae! Debitis culpa ad, repellat in, hic aperiam, quam a dolorem dolore harum cumque.</p>
+                                            <a href="viewpost.php?id=" class="btn btn-primary">Details</a>
+                                        </div>
+                                        <!-- <img src="http://localhost/spasavage/src/services/assets/images/a-diverse-group-of-friends-together-laughing-and-having-a-good-time-16x9-1024x576.jpg" alt="" height="200px" width="100%" class="c"> -->
+                                        <!-- <embed src="http://localhost/spasavage/src/services/assets/images/SONOR x Aaron Spears _ Switch.mp4" alt="" height="200px" width="100%" allowfullscreen="true" preload="false" autostart="false"  autoplay="false" class="c"> -->
+                                            <video  src="http://localhost/spasavage/src/services/assets/images/SONOR x Aaron Spears _ Switch.mp4" alt="" height="200px" width="100%" allowfullscreen="true" autoplay="false" controls  preload="none"  class="c viewer"></video>
+                                    </div>
+                                    <div>
+            
+                                        <span class="like fa fa-thumbs-o-up" data-id=""></span>
+                                        <span class="likes_count">100 likes</span>
+                                        <a href="viewpost.php?id#comment_form"><span id="comments_count">2 Comments</span></a>
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <hr>
+            
+                                </div>
+                                
+                                <div class="card  post ">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <h3 class="card-title">
+                                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                                Daniel
+                                            </h3>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste laboriosam exercitationem eos cumque similique deserunt molestiae! Debitis culpa ad, repellat in, hic aperiam, quam a dolorem dolore harum cumque.</p>
+                                            <a href="viewpost.php?id=" class="btn btn-primary">Details</a>
+                                        </div>
+                                        <img src="" alt="" height="200px" width="100%" class="c">
+                                    </div>
+                                    <div>
+            
+                                        <span class="like fa fa-thumbs-o-up" data-id=""></span>
+                                        <span class="likes_count">100 likes</span>
+                                        <a href="viewpost.php?id#comment_form"><span id="comments_count">2 Comments</span></a>
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <hr>
+            
+                                </div>
+            
+            
+            
+                                <div class="card  post ">
+                                    <div class="card-body">
+                                        <div class="col-md-12">
+                                            <h3 class="card-title">
+                                                <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png" height="40px" width="40px" style="border-radius:50%;" alt="">
+                                                <!-- <img src="http://localhost/spasavage/src/services/assets/images/profile.png.2018-04-24.1524590440.png"> -->
+                                                Daniel
+                                            </h3>
+                                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis iste laboriosam exercitationem eos cumque similique deserunt molestiae! Debitis culpa ad, repellat in, hic aperiam, quam a dolorem dolore harum cumque.</p>
+                                            <a href="viewpost.php?id=" class="btn btn-primary">Details</a>
+                                        </div>
+                                            <video  src="http://localhost/spasavage/src/services/assets/images/SONOR x Aaron Spears _ Switch.mp4" alt="" height="200px" width="100%" allowfullscreen="true" autoplay="false" controls  preload="none"  class="c viewer"></video>
+                                    </div>
+                                    <div>
+            
+                                        <span class="like fa fa-thumbs-o-up" data-id=""></span>
+                                        <span class="likes_count">100 likes</span>
+                                        <a href="viewpost.php?id#comment_form"><span id="comments_count">2 Comments</span></a>
+                                        <span class="fa fa-paper-plane"></span>
+                                    </div>
+                                    <hr>
+            
+                                </div>
+                            </div>
+                        </div>
+        </div>
+        <div class="col-md-3 bg-white m-0 floating-box" id="trends">
+                <h2>Trending</h2>
+                <span>
+                    <a href="" class="trendlinks">#Tacha</a>
+                    <p>1000 Savage Responses </p>
+                    <p>1000 Watching </p>
+                    <hr>
+                </span>
+                <br>
+                <span>
+                    <a href="" class="trendlinks">#Pero</a>
+                    <p>1000 Savage Responses </p>
+                    <p>1000 Watching </p>
+                    <hr>
+                </span>
+                <br>
+                <span>
+                    <a href="" class="trendlinks">#RedFlag</a>
+                    <p>1000 Savage Responses </p>
+                    <p>1000 Watching </p>
+                    <hr>
+                </span>
+                <br>
+                <span>
+                    <a href="" class="trendlinks">#Bobrisky</a>
+                    <p>1000 Savage Responses </p>
+                    <p>1000 Watching </p>
+                    <hr>
+                </span>
+                <br>
+            </div>
+
+                  <div id="item" class="text-center">
+            <a href="#" class="fa fa-fire mt-4"></a>
+                  </div>
+        
+    </section>
+    <script src="http://localhost/spasavage/src/services/assets/js/drag.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/video.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/jquery.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/jquery.min.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/sidebar.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/home.js"></script>
+    <script src="http://localhost/spasavage/src/services/assets/js/logout.js"></script>
+</body>
+</html>
