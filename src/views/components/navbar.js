@@ -1,41 +1,19 @@
 let Navbar = {
     render: async () => {
         let view =  /*html*/`
-             <header>
-            <nav class="navbar navbar-expand-lg navbar-dark  m-0  p-0 navbar-fixed-top" style="background:rgb(2, 7, 93); top: 0;">
-                    <div class="container" id="nav-container">
-                        <div class="mr-auto pl-0 ml-0">
-                                <a class="navbar-brand mr-auto mr-lg-0" href="#">Savage</a>
-                        </div>
-                        <div>
-                                <form class="form-inline desktop-form">
-                                        <div class="content input-container">
-                                                <i class="fa fa-search"></i>
-                                    <input  class="inputfield input search" id="" type="text" placeholder="Search...." aria-label="Search">
-                                                <span class="border"></span>
-                                              </div>
-                                </form>
-                            <form class="form-inline phone-form pull-right">
-                                    <div class="content input-container" >
-                                            <i class="fa fa-search"></i>
-                                <input class="inputfield input search" style="width:60%;" id="" type="text" placeholder="Search...." aria-label="Search">
-                                            <span class="border"></span>
-                                          </div>
-                            </form>
-                            <!-- <button onclick="searchdisplay()" id="searchbtns" class="searchbtn btn btn-outline-success fa fa-search"  >gh</button> -->
-                        </div>
+             
+            <nav class="navbar navbar-expand-lg navbar-dark  m-0 p-0 navbar-fixed-top" style=" top: 0;">
+                    <div class="container d-flex col-md-12" id="nav-container">
                 
-                        <div class="d-flex pull-right ml-auto pr-4">
+                        <div class="d-flex ml-md-5 pl-md-5 col-md-4 col-4" style="color: rgb(8, 241, 86);">
                             <ul class="navbar-nav desktop-nav mr-auto">
                                 <li class="nav-item active mr-3">
-                                    <a class="nav-link" href="#">Home</a>
+                                   <!-- <a class="nav-link" href="#">Home</a> -->
+                                    <a class="nav-link"><i class="fa fa-bell"></i></a>
                                 </li>
-                                <li class="nav-item active mr-3">
-                                    <a class="nav-link" href="#">Notifications</a>
-                                </li>
-                                <li class="nav-item active mr-3">
-                                    <a class="nav-link" href="#">Messages</a>
-                                </li>
+                            <li class="nav-item active mr-3">
+                            <a class="nav-link" id="navthemebtn"><i class="fa fa-cog"></i></a>
+                            </li>
                             </ul>
                             <ul class="navbar-nav ml-auto" id="phone_user">
                                     <li class="nav-item">
@@ -45,15 +23,7 @@ let Navbar = {
                         </div>
                     </div>
                 </nav>
-    </header>
-    <ul id="ko" class=" text-center">
-            <li class="bottom-nav floating-box"><a class="active" href="#home"><span class="fa fa-home"></span> </a></li>
-            <li class="bottom-nav floating-box"><a href="#news"><span class="fa fa-bell"></span></a></li>
-            <li class="bottom-nav floating-box"><a href="#news"><span class="fa fa-envelope"></span></a></li>
-            <li class="bottom-nav floating-box"><a href="#contact"><span class="fa fa-plus"></a></li>
-            <li class="bottom-nav floating-box"><a href="#about"><span class="fa fa-fire"></a></li>
-                <li class="bottom-nav floating-box"><a href="#about"><span class="fa fa-bars"></a></li>
-          </ul>
+
         `
         return view
     },

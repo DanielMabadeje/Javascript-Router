@@ -1,0 +1,22 @@
+:root {
+    /* --primary-bg-color: #343a40 !important; 
+    --primary-color: #ffffff; */
+        --primary-bg-color: #000000 ; 
+    --primary-color: #ffffff;
+     /* --primary-bg-color: #ffffff !important; 
+    --primary-color:  #343a40; */
+  }
+  body{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+  }
+  @media screen and (max-width: 700px) {
+    .sidenav {
+        background: var(--primary-bg-color);
+        color: var(--primary-color);
+    }
+  }
+  .card{
+    background-color: var(--primary-bg-color);
+    color: var(--primary-color);
+  }

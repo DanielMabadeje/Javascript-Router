@@ -1,35 +1,12 @@
-// --------------------------------
-//  Define Data Sources
-// --------------------------------
-
-let getPostsList = async () => {
-     const options = {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json'
-        }
-    };
-    try {
-        const response = await fetch(`https://5bb634f6695f8d001496c082.mockapi.io/api/posts`, options)
-        const json = await response.json();
-        // console.log(json)
-        return json
-    } catch (err) {
-        console.log('Error getting documents', err)
-    }
-}
 
 let Home = {
     render : async () => {
 
-        let view =  /*html*/`
-<iframe src="views/html/home.html" width="100%" height="800px"></iframe>
-        `
-
-        
-        return view
+        let url ='./src/views/html/home.html'
+        return await (await fetch(url)).text();
     }
     , after_render: async () => {
+       
     }
 
 }
